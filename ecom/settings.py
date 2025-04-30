@@ -76,14 +76,14 @@ WSGI_APPLICATION = 'ecom.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-        #'ENGINE': 'django.db.backends.postgresql',
-        #'NAME': 'railway',
-        #'USER': 'postgres',
-        #'PASSWORD': os.environ['DB_PASSWORD_YO'],
-        #'HOST': 'postgres-production-2ceb.up.railway.app',
-        #'PORT': '8000',
+        #'ENGINE': 'django.db.backends.sqlite3',
+        #'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'railway',
+        'USER': 'postgres',
+        'PASSWORD': os.environ['DB_PASSWORD_YO'],
+        'HOST': 'postgres-production-2ceb.up.railway.app',
+        'PORT': '8000',
         
     }
 }
