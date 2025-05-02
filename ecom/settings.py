@@ -83,7 +83,7 @@ DATABASES = {
         'USER': 'postgres',
         'PASSWORD': os.environ['DB_PASSWORD_YO'],
         'HOST': 'metro.proxy.rlwy.net',
-        'PORT': '8080', 
+        'PORT': '', 
         
     }
 }
