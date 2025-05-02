@@ -18,8 +18,8 @@ SECRET_KEY = 'django-insecure-d++w2!amr*9yx1vk-#r^1am-(i-r7p!a-fsw1f%t_u3l$u9x+6
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
-#CSRF_TRUSTED_ORIGINS=['https://shivaecom-production.up.railway.app']
+ALLOWED_HOSTS = ['ecomweb-production-5f4f.up.railway.app','https://ecomweb-production-5f4f.up.railway.app']
+CSRF_TRUSTED_ORIGINS=['ecomweb-production-5f4f.up.railway.app','https://ecomweb-production-5f4f.up.railway.app']
 
 
 # Application definition
@@ -130,7 +130,7 @@ STATICFILES_DIRS=['static/']
 
 # White Noise stuff
 STATICFILES_STORAGE='Whitenoise.storage.CompressedManifestStaticFilesStorage'
-STATIC_ROOT =BASE_DIR/ 'staticfiles'
+STATIC_ROOT = BASE_DIR / 'staticfiles'
  
 MEDIA_URL='media/'
 MEDIA_ROOT=os.path.join(BASE_DIR,'media')
