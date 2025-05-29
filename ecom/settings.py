@@ -19,7 +19,7 @@ SECRET_KEY = 'django-insecure-d++w2!amr*9yx1vk-#r^1am-(i-r7p!a-fsw1f%t_u3l$u9x+6
 DEBUG = True
 
 ALLOWED_HOSTS = ['ecomweb-production-89d1.up.railway.app','ecomweb-production-89d1.up.railway.app']
-CSRF_TRUSTED_ORIGINS=['ecomweb-production-89d1.up.railway.app']
+CSRF_TRUSTED_ORIGINS=['https://ecomweb-production-89d1.up.railway.app']
 
 
 # Application definition
@@ -76,8 +76,8 @@ WSGI_APPLICATION = 'ecom.wsgi.application'
 
 DATABASES = {
     'default': {
-        #'ENGINE': 'django.db.backends.sqlite3',
-        #'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'railway',
         'USER': 'postgres',

@@ -1,2 +1,2 @@
-web:gunicorn ecom.wsgi --log-file -
+web: gunicorn ecom.wsgi --workers=1 --threads=1 --timeout=60
 web: python manage.py migrate && gunicorn ecom.wsgi.py
